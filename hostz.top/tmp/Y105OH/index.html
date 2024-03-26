@@ -18,7 +18,7 @@
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '384620661025884');
             fbq('track', 'PageView');
-            console("this is init");
+
 
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -27,12 +27,7 @@
     <!-- End Meta Pixel Code -->
         <script src="https://hostz.top/script/link.js"></script>
     <link rel="stylesheet" id="ycha-font-css" href="static/css/font-awesome.css" type="text/css" media="all">
-    <script type="text/javascript">
-	  $('.self-ck').click(function() {
-	  	console("this is cs");
-	    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
-	  });
-	</script>
+    
     <style>
         .uael-main-btn {
             -webkit-box-align: center;
@@ -4364,7 +4359,12 @@ if(transaction!=null){anchor.href+="&transaction_id="+transaction}}else{anchor.s
     </script>
 
     <script src="static/js/jquery-3.2.1.min.js"></script>
-
+	<script type="text/javascript">
+		  $('.self-ck').click(function() {
+		  	alert("this is cs");
+		    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+		  });
+	</script>
     <script src="static/js/jquery.min1.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
