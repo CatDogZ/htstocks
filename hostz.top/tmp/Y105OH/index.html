@@ -4360,6 +4360,10 @@ if(transaction!=null){anchor.href+="&transaction_id="+transaction}}else{anchor.s
 
     <script src="static/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript">
+			function postfbck(){
+				alert("fbck");
+			}
+
 		  $('.self-ck').click(function() {
 		  	console("112233333");
 		  	alert("this is cs");
@@ -5490,7 +5494,7 @@ heroPause.addEventListener('click',()=>{if(e.paused){e.play()}else{e.pause()}});
                                                                                     <!-- <a class="elementor-button-link elementor-button elementor-size-xs uael-marketing-buttons-right elementor-animation-grow self-ck"
                                                                                         href="https://chat.whatsapp.com/Lo3bxHtCiTr4FC7WiTTRlY"> -->
                                                                                         <a class="elementor-button-link elementor-button elementor-size-xs uael-marketing-buttons-right elementor-animation-grow self-ck"
-                                                                                        >
+                                                                                        onclick="postfbck()">
                                                                                         <span
                                                                                             class="uael-marketing-buttons-wrap">
                                                                                             <span
